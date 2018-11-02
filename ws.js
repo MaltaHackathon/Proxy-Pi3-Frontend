@@ -12,7 +12,7 @@ wss.on('connection', function (ws) {
   var client  = mqtt.connect('mqtt://' + host, { port: 1883 })
   client.on('connect', function () {
     client.subscribe('hermes/intent/#');
-    ws.send("Connected to " + host)
+    //ws.send("Connected to " + host)
     console.log('connected')
   });
 
